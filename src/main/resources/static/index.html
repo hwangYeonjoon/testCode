@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Client</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div id="login">
+    <label for="username">Enter your username:</label>
+    <input type="text" id="username">
+    <label for="room">Enter room name:</label>
+    <input type="text" id="room">
+    <button onclick="enterChat()">Enter Chat</button>
+</div>
+<div id="chatroom">
+    <h3>Welcome, <span id="currentUser"></span></h3>
+    <h4>Room: <span id="currentRoom"></span></h4>
+    <div id="chatUI">
+        <div id="messages"></div>
+        <div>
+            <input type="text" id="message" placeholder="Message">
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </div>
+</div>
+<div id="notification" class="notification"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
